@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="0fd6b1f8-2406-48c1-89c5-bb624cdf5bbe" activeEnvironment="Default" name="REST Project 2" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="6674d3f2-2950-497c-971e-3959f8f9c6e9" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sandbox.dev.clover.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>https://sandbox.dev.clover.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Customers" path="/v3/merchants/4BSPEPA0HQJR1/customers" id="25978d50-2341-4827-bdd4-60a439ffa2ae">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Customers 1" id="412b2e60-b9c0-403d-8548-1730bd7b0e09" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:cus="https://sandbox.dev.clover.com/v3/merchants/4BSPEPA0HQJR1/customers">cus:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="1f228440-292d-4171-a6f1-99fe98dfc8f1" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://sandbox.dev.clover.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sandbox.dev.clover.com/v3/merchants/4BSPEPA0HQJR1/customers</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Rest2</con:selectedAuthProfile>
+            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer>
+    <con:oAuth2Profile>
+      <con:name>Rest2</con:name>
+      <con:accessToken>fde0f407-addd-eaf3-d622-5532664c00fb</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:accessTokenStatus>UNKNOWN</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
+    </con:oAuth2Profile>
+  </con:oAuth2ProfileContainer>
+  <con:oAuth1ProfileContainer/>
+</con:soapui-project>

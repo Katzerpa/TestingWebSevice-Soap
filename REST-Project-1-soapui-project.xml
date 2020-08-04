@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d2b40d87-f5e3-4f59-b0e2-5e3665c353d9" activeEnvironment="Default" name="REST Project 1" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="a62de8c5-c742-49c5-8626-6d2008b1e3f7" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sandbox.dev.clover.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://sandbox.dev.clover.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Employees" path="/v3/merchants/4BSPEPA0HQJR1/employees/" id="ce55dc6a-b5e4-400e-9ea4-75804f1e1523">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Employees 1" id="9ebd90cb-a74c-4582-85c0-734ae394f434" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:emp="https://sandbox.dev.clover.com/v3/merchants/4BSPEPA0HQJR1/employees">emp:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400 404</con:status>
+          <con:params/>
+          <con:element xmlns:emp="https://sandbox.dev.clover.com/v3/merchants/4BSPEPA0HQJR1/employees">emp:Fault</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="9239442f-ba4d-4db6-9d9f-003a76e5a855" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://sandbox.dev.clover.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sandbox.dev.clover.com/v3/merchants/4BSPEPA0HQJR1/employees</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>REST</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+        <con:request name="POST" id="9239442f-ba4d-4db6-9d9f-003a76e5a855" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://sandbox.dev.clover.com</con:endpoint>
+          <con:request>{
+      "pin": "8888"}</con:request>
+          <con:originalUri>https://sandbox.dev.clover.com/v3/merchants/4BSPEPA0HQJR1/employees</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>REST</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+        <con:request name="DELETE" id="9239442f-ba4d-4db6-9d9f-003a76e5a855" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://sandbox.dev.clover.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://sandbox.dev.clover.com/v3/merchants/4BSPEPA0HQJR1/employees</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>REST</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer>
+    <con:oAuth2Profile>
+      <con:name>REST</con:name>
+      <con:accessToken>fde0f407-addd-eaf3-d622-5532664c00fb</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:accessTokenStatus>UNKNOWN</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
+    </con:oAuth2Profile>
+  </con:oAuth2ProfileContainer>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>
